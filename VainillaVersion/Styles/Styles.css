@@ -1,0 +1,330 @@
+/*
+Revisar esto para efectos https://www.w3schools.com/cssref/tryit.asp?filename=trycss_animatable
+https://www.w3schools.com/cssref/css_animatable.asp
+*/
+html{
+  word-wrap: break-word; 
+}
+body {
+  color: white;
+  background-color: #000;
+  
+  background-image: url(../Img/web.png) ;
+  background-size: 100%;
+  
+  background-repeat:repeat ;
+  background-position: top;
+  width: auto;
+}
+
+header {
+  
+  background-color: #000; 
+  color: whitesmoke;
+  font-size: 12pt;
+  text-align: center;
+
+  /*margin-left: 9%;
+  margin-right: 9%;*/
+
+  /* Esto lo hace que quede fijo segun el scrol*/
+  position: sticky;
+  top: 0;
+  border: 2px solid #0000;
+
+  
+}
+
+nav{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #111;
+}
+
+main{
+  margin-top : 0%;
+  margin-left: 9%;
+  margin-right: 9%;
+  
+  /*max-width: 1200px;*/
+  min-height: 800px;
+  
+  align-items: center;
+  align-self: center;
+}
+
+
+
+
+footer {
+  color: whitesmoke;
+  font-size: 12pt;
+  text-align: center; 
+}
+
+
+footer > *{
+  font-size: 8pt;
+}
+
+footer > #author {
+  font-size: 12pt;
+  font-family: OldEnglishTextMT;
+}
+
+footer > #collaborator {
+  font-size: 12pt;
+  font-family: OldEnglishTextMT;
+}
+
+
+
+/*------------------------------------------*/
+
+@font-face { font-family: OldEnglishTextMT; src: url('../utils/OLDENGL.TTF'); } 
+h1, #explicacion{
+  font-family: OldEnglishTextMT;
+  align-content: center;
+  text-align: center;
+  color: rgb(184, 165, 103);
+  text-decoration : underline;
+  font-weight: 1;
+  font-size: 36px;
+  /*background-color:rgba(50, 14, 12, 25);*/
+  
+}
+
+h2 {
+  font-family: OldEnglishTextMT;
+  text-decoration : underline;
+  align-content: center;
+  text-align: center;
+  color: rgb(184, 165, 103);
+}
+
+h3 {
+  font-family: OldEnglishTextMT;
+  align-content: center;
+  text-align: center;
+  color: rgb(184, 165, 103);
+  font-size : 16pt;
+}
+
+h4 {
+  font-family: OldEnglishTextMT;
+  color: whitesmoke;
+  font-size : 18pt;
+  text-align: left;
+  text-decoration : underline;
+}
+
+
+h5,h6,p,basic {
+  color: whitesmoke;
+  font-size : 12pt;
+  font-weight : normal; 
+  text-align: left;
+}
+
+input {
+  color: black;
+}
+
+a:link,a:visited,a:active{
+  color: white;
+  text-decoration: none;  
+  font-weight: bold;
+}
+
+a:hover{
+  color:rgb(223, 100, 0);
+}
+
+.Tittle{ flex-direction: fixed;}
+
+
+
+/*------------------------------------------*/
+fieldset{
+  border-color: #333;
+}
+
+legend{
+  font-size : 18pt;
+  font-weight: bold;
+  text-align: center; 
+}
+/*------------------------------------------*/
+
+.block_container, .baraja {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  border: 2px  solid #111;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .row{
+  border: 2px  solid #333;
+}
+
+
+/*------------------------------------------*/ 
+@font-face { font-family: Simbolos; src: url('../utils/BaseDeSimbolos-Regular.ttf'); } 
+.icono {
+  font-size: 50pt;
+  font-family: Simbolos;
+  color: rgb(83, 83, 83);
+  word-wrap: break-word; 
+}
+.icono > *{
+  text-align: center;
+  align-items: center;
+}
+
+img[alt^="carta-"]{
+  border: 1px  solid goldenrod;
+}
+
+.Vacio      { color: #aaaaaa;}
+.Piedra     { color: #663300;}
+.Sangre     { color: #800000;}
+.Fuego      { color: #FF1A00;}
+.Sonido     { color: #FF6600;}
+.Luz        { color: #FF9900;}
+.Tiempo     { color: #996600;}
+.Bestias    { color: #59582F;}
+.Naturaleza { color: #009900;}
+.Caos       { color: #00CC33;}
+.Arcana     { color: #FFFFFF;}
+.Aire       { color: #66F0FF;}
+.Muerte     { color: #00E6B7;}
+.Hielo      { color: #0066FF;}
+.Rayo       { color: #1500DD;}
+.Oscuridad  { color: #330099;}
+.Espacio    { color: #A000E6;}  
+.Sueños     { color: #FF00FF;}
+.Hongos     { color: #CC0033;}
+.Acero      { color: #28283E;}
+
+
+/*  ---------------------------------------------------------------------------------------------- */
+
+
+
+
+.fisicos,.fisicosTittle               { color: #C00000;}
+.sociales,.socialesTittle             { color: #C45911;}
+.espirituales,.espiritualesTittle     { color: #00B050;}
+.mentales,.mentalesTittle             { color: #0070C0;}
+.sobrenaturales,.sobrenaturalesTittle { color: #7030A0;}
+
+#tituloArquetipos{
+  font-size: 20pt;
+  font-family: OldEnglishTextMT;
+}
+
+
+#stats{
+  font-family: Simbolos;
+  font-size: 50pt;
+  border: 2px solid #111;
+}
+
+#tituloArquetipos{
+  font-size: 20pt;
+  font-family: OldEnglishTextMT;
+} 
+
+
+#statsCategoria > div{
+  font-weight: bold;
+}
+
+#stats > div{
+  border: 2px solid #111;
+  width: 7.6923076923076923076923076923077%;
+}
+
+.fisicos,.sociales,.espirituales,.mentales,.sobrenaturales{
+  flex: 0 0 auto;
+  width: 7.6923076923076923076923076923077%;
+  font-family: Simbolos;
+  font-size: 50pt;
+}
+
+.fisicosTittle,.socialesTittle,.espiritualesTittle,.mentalesTittle,.sobrenaturalesTittle{
+  flex: 0 0 auto;
+  width: 23.076923076923076923076923076923%;
+  font-size: 12pt;
+}
+
+.fisicosStat           { background-color: #C00000;}
+.socialesStat          { background-color: #C45911;}
+.espiritualesStat      { background-color: #00B050;}
+.mentalesStat          { background-color: #0070C0;}
+.sobrenaturalesStat    { background-color: #7030A0}
+.sobrenaturalesTittle,.sobrenaturalesStat { width: 7.6923076923076923076923076923077%;}
+
+.fisicosTittle,.socialesTittle,.espiritualesTittle,.mentalesTittle,.sobrenaturalesTittle{
+  background-color: #000000;
+  border: 2px solid #111
+  
+}
+
+.fisicosStat,.socialesStat,.espiritualesStat,.mentalesStat,.sobrenaturalesStat{
+  flex: 0 0 auto;
+  width:  7.6923076923076923076923076923077%;
+  font-size: 10pt;
+  border: 2px solid #111;
+} 
+
+
+.statColumn {
+  flex: 0 0 auto;
+  width: 7.6923076923076923076923076923077%;
+  border: 2px solid #111;
+}
+
+/*  ---------------------------------------------------------------------------------------------- */
+#explicacion {
+  font-size: 15pt;
+}
+
+img {
+  width:"100%";
+  height:"auto";
+}
+
+/*-------------------------------------------------------------------------------------------------- */
+/*------------------------------------------ PACIS CODE ---------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------- */
+
+.img-main {
+  width : 30%;
+  height: auto;
+  padding: 15px;
+  align-items: center;
+}
+
+.text-main {
+  width : 70%;
+  height: auto;
+
+}
+
+.section {
+  width: 100%;
+  display: inline-flex;
+  height: 50%;
+}
+
+.img-main > img {
+  width: 100%;
+}
+
+
+
